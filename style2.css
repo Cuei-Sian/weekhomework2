@@ -1,0 +1,301 @@
+/* 字型載入 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+/* 標籤基本設定 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color:var(--ne-900);
+}
+img{
+  /* margin: 0 auto; */
+	max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a{
+  text-decoration: none;
+  color: var(--ne-900);
+  display: block;
+  font-weight: 500;
+}
+/* 宣告變數-顏色設定 */
+:root{
+  --pr-400:#57A203;
+  --pr-300:#C0FA73;
+  --pr-200:#E8FEC5;
+  --ne-900:#212529;
+  --ne-600:#6C757D;
+  --ne-000:#FFFFFF;
+  --ne-100:#F8F9FA;
+  --ne-300:#DEE2E6;
+  --ne-500:#ADB5BD;
+  --fu-300:#D74F4F;
+}
+.bg-pr-200{
+  background-color: var(--pr-200);
+}
+
+/* 通用樣式 */
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+.col-1{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 1);
+}
+.col-2{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2);
+}
+.col-3{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 3);
+}
+.col-4{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 4);
+}
+.col-5{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 5);
+}
+.col-6{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 6);
+}
+.col-7{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 7);
+}
+.col-8{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 8);
+}
+.col-9{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 9);
+}
+.col-10{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 10);
+}
+.col-11{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 11);
+}
+.col-12{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+/* 對齊方式 */
+.d-f{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.gap-8{
+  gap: 8px;
+}
+/* 文字字體設定 */
+.h2{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.h3{
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h4{
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h5{
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--pr-400);
+}
+.h6{
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.paragraph{
+  font-weight: 400;
+  color: var(--ne-600);
+}
+.paragraph2{
+  font-weight: 400;
+}
+.copyright{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ne-600);
+}
+.text-sm{
+  font-size: 14px;
+  font-weight: 400;
+  color: #D74F4F;
+}
+
+/*--通用按鈕樣式--*/
+.btn{
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer; /*--游標改成手指的圖示--*/
+  border: none; /*--去除邊線--*/
+  background-color: transparent;/*--按鈕背景色:透明--*/
+}
+.btn-dark{ /*--通用按鈕樣式--*/
+  color: var(--ne-000);
+  background-color: var(--ne-900);/*--按鈕背景色:黑色--*/
+}
+.btn-light{
+  border: 1px solid var(--ne-900);
+}
+/*  設定間距--推擠方向  */
+.p-12{
+  padding: 12px;
+}
+.pt-32{
+  padding-top: 32px;
+}
+.pr-8{
+  padding-right: 8px;
+}
+.ptb-7{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.ptb-8{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.ptb-12{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.ptb-16{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.ptb-24{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.ptb-32{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.ptb-48{
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.ptb-64{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.mr-8{
+  margin-right: 8px;
+}
+.mr-12{
+  margin-right: 12px;
+}
+.mr-24{
+  margin-right: 24px;
+}
+.mr-40{
+  margin-right: 40px;
+}
+.mr-48{
+  margin-right: 48px;
+}
+.mb-4{
+  margin-bottom: 4px;
+}
+.mb-8{
+  margin-bottom: 8px;
+}
+.mb-12{
+  margin-bottom: 12px;
+}
+.mb-16{
+  margin-bottom: 16px;
+}
+.mb-24{
+  margin-bottom: 24px;
+} 
+.mb-32{
+  margin-bottom: 32px;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+.mb-48{
+  margin-bottom: 48px;
+}
+
+
+/* 頁面區塊設定 */
+.pseudo-item{
+  display: flex;
+  font-weight: 500;
+}
+.pseudo-item + .pseudo-item::before{
+  content:'/';
+  padding: 0 12px;
+  color: var(--ne-300);
+  font-weight: 700;
+}
+.pseudo-link{
+  color: var(--ne-600);
+}
+.cpy{
+  border-top: 1px solid var(--ne-300);
+  text-align: center;
+  color: var(--ne-600);
+  font-size: 14px;
+  font-weight: 400;
+}
+
